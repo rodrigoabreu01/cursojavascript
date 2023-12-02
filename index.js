@@ -31,7 +31,13 @@ button.addEventListener('click', function(){
 });
 document.querySelector('#container').append(button);
 
-document.querySelector('#nome').onkeyup = function(){
-    let valor = document.querySelector('#nome').value; 
-    document.querySelector('#resultado').innerHTML = valor;
-};
+// document.querySelector('#nome').onkeyup = function(){
+//     let valor = document.querySelector('#nome').value; 
+//     document.querySelector('#resultado').innerHTML = valor;
+// };
+
+
+//JEITO QUE ESCREVE MENOS
+nome.onkeyup = () => {
+    alert(`Seja bem vindo(a) ${nome.value}`);
+}
